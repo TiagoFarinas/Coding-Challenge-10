@@ -20,3 +20,11 @@ sizeSelect.addEventListener('change', function(event) {
     var selectedSize = event.target.value;
     // Control purchase button based on stock availability
     purchaseButton.disabled = !stock[selectedSize]}); // Disable if out of stock
+
+ // Task 4: Create a Checkout Event
+ purchaseButton.addEventListener('click', function() {
+    var selectedSize = sizeSelect.value;
+    if (selectedSize === 'large') {// Show message based on stock availability
+        alert('Sorry, the product is out of stock.');
+    } else {
+        alert('Product purchased successfully!')}});
