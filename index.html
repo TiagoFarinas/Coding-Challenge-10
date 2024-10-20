@@ -17,5 +17,16 @@
     </select>
     <button id="purchaseButton" disabled>Buy Now</button> <!-- Purchase button -->
     <script src="main.js"></script> <!-- Link to JavaScript file -->
+
+    <!-- Task 5: Add a form to input new products -->
+    <h3>Add New Product</h3>
+    <form id="addProductForm">
+           <label for="newProductName">Product Name:</label><!-- Input product name -->
+           <input type="text" id="newProductName" required>
+           <label for="newProductSizes">Sizes (comma separated):</label><!-- Input sizes -->
+           <input type="text" id="newProductSizes" required>
+           <button type="submit">Add Product</button><!-- Submit button to add product -->
+       </form>
+       <div id="productList"></div> <!-- Container to hold added products -->
 </body>
 </html>
